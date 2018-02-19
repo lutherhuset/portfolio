@@ -1,0 +1,208 @@
+body {
+    text-align: center;
+    background-color: wheat;
+}
+
+/* header doesnt include navbar settings */
+header {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* Logo image */
+#logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+}
+
+/* Navbar styling */
+ul {
+    list-style-type: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: hidden;
+    background-color: goldenrod;
+    border: 5px dotted firebrick;
+    top: 0;
+    width: 70%;
+    text-align: center;
+}
+
+/* Makes navbar horizontal */
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: wheat;
+    color: darkolivegreen;
+}
+
+#header_photo {
+    display: block;
+    margin-bottom: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+#headerpic {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+/* section container that utilizes flexbox for responsiveness */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;   
+}
+
+#featured_work {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: black;
+    text-decoration: underline;
+}
+
+/* picture settings for the pics within example divs */
+.site_pics {
+    display: block;
+    max-width: 80%;
+    max-height: 70%;
+    border-radius: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* example div style settings */
+.example {
+    width: 25%;
+    height: auto;
+    border: 5px solid firebrick;
+    margin: 0.25%;
+    border-radius: 25%;
+}
+
+.ex1 {
+    background-color: goldenrod;
+    margin-left: auto;
+}
+
+.ex2 {
+    background-color: darkolivegreen;
+}
+
+.ex3 {
+    background-color: goldenrod;
+    margin-right: auto;
+}
+
+footer {
+    width: 100%;
+}
+
+/* Media Queries listed below to reformat webpage for different sized screens */
+@media screen and (min-width: 1500px) {
+    .example {
+        width: 32%;
+        height: auto;
+    }
+
+    #headerpic {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .example {
+        width: 27%;
+        height: auto;
+    }
+
+    #headerpic {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1099px) {
+    .example {
+        width: 80%;
+        height: auto;
+    }
+
+    #headerpic {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ex1 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .ex2 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .ex3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 699px) {
+    .example {
+        width: 100%;
+        height: auto;
+    }
+
+    #headerpic {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    .example {
+        width: 100%;
+        height: auto;
+    }
+
+    #headerpic {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
